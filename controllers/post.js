@@ -4,6 +4,7 @@ const prisma = new PrismaClient();
 
 const getAll = async (req, res) => {
   try {
+    html;
     const posts = await prisma.post.findMany({
       where: {
         authorId: req.user.id,
